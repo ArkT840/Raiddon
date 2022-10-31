@@ -1,0 +1,14 @@
+{
+    "name": "Raiddon - Node.js",
+    "description": "A sample app using the Blizzard Developer APIs",
+    "env": {
+      "CLIENT_ID": {
+        "description": "The Client ID from develop.battle.net",
+        "value": "07cec53e03624453ab385a587b1d834d"
+      },
+      "CLIENT_SECRET": {
+        "description": "The Client Secret from develop.battle.net",
+        "value": "YX6OUqFOj2NqJ5qvssqGPbi8rme98tk6"
+      }
+    }
+  }
