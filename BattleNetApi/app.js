@@ -1,14 +1,16 @@
 const express = require('express');
 const morgan = require('morgan');
 const createError = require('http-errors');
-const AuthRoute = require('./Routes/Auth.route');
-const csp = require('express-csp-header');
+const AuthRoute = require('./routes/auth.route');
 
 
 require('dotenv').config();
+require('./helpers/init_mongodb')
 
 const app = express();
 app.use(morgan('dev'))
+app.use(express.json())
+app.use(express.urlencoded({extended:true}))
 
 //Generating HomePage
 app.get('/', async (req, res, next) => {
@@ -29,6 +31,7 @@ app.use((err, req, res, next) => {
         }
     })
 })
+
 const router = express.Router();
 //Register route
 router.post('/register', async (req, res, next) => {

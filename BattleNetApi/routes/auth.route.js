@@ -1,9 +1,15 @@
 const express = require ('express');
 const router = express.Router();
+const createError = require('http-errors')
 
 //Register route
 router.post('/register', async (req, res, next) => {
-    res.send("register route")
+    try{
+        const { email, password } = req.body
+        if(!email || !password ) throw createError.BadRequest()
+    } catch (error){
+        next(error)
+    }
 })
 
 //Login route

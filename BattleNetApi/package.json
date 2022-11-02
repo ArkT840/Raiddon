@@ -1,29 +1,22 @@
 {
-  "name": "battlenetapi",
+  "name": "auth_tutorial",
   "version": "1.0.0",
-  "description": "Fetching battle.net api via blizzard developper portal",
-  "main": "server.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Farah404/Raiddon.git"
-  },
-  "author": "https://github.com/Farah404",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Farah404/Raiddon/issues"
-  },
-  "homepage": "https://github.com/Farah404/Raiddon#readme",
   "dependencies": {
-    "axios": "^1.1.3",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "express-csp-header": "^5.1.0",
+    "helmet": "^6.0.0",
+    "http-errors": "^2.0.0",
     "mongoose": "^6.7.0",
-    "node-fetch": "^2.6.7",
-    "nodemon": "^2.0.20",
-    "oauth": "^0.9.5"
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20"
   }
 }
