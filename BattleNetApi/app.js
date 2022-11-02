@@ -32,15 +32,6 @@ app.use((err, req, res, next) => {
     })
 })
 
-const router = express.Router();
-//Register route
-router.post('/register', async (req, res, next) => {
-    res.send("register route")
-})
-
-//Middleware for auth pages
-app.use('/auth', AuthRoute)
-
 //Listening port
 const PORT = process.env.PORT || 3000
 app.listen(PORT, () => {
