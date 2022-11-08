@@ -1,6 +1,13 @@
 const router = require('express').Router();
 const { BlizzAPI } = require('blizzapi');
 
+// const fetch = require('node-fetch');
+// async function start() {
+// const response = await fetch('https://us.api.blizzard.com/data/wow/playable-race/index?namespace=static-classic-us&locale=en_US&access_token=EUW5nbYYRvi27pVlj2KksCC7OmKbR9DvVXhttps://api.github.com/users/github');
+// const data = await response.json();
+// console.log(data);
+// }
+
 /** Regions */
 router.get('/getAllRegions', (req, res) => {
   res.json(BlizzAPI.getAllRegions());
@@ -62,45 +69,6 @@ router.get('/validateLocale/:locale', (req, res) => {
 router.get('/isLocaleValidForRegionId/:locale/:regionId', (req, res) => {
   const { locale, regionId } = req.params;
   res.json(BlizzAPI.isLocaleValidForRegionId(locale, regionId));
-});
-
-/** SC2 realms */
-
-router.get('/getAllSc2Realms', (req, res) => {
-  res.json(BlizzAPI.getAllSc2Realms());
-});
-
-router.get('/getAllAvailableSc2Realms', (req, res) => {
-  res.json(BlizzAPI.getAllAvailableSc2Realms());
-});
-
-router.get('/getSc2RealmsByRegionId/:regionId', (req, res) => {
-  const { regionId } = req.params;
-  res.json(BlizzAPI.getSc2RealmsByRegionId(regionId));
-});
-
-router.get('/checkIfSc2RealmLooksValid/:sc2Realm', (req, res) => {
-  const { sc2Realm } = req.params;
-  res.json(BlizzAPI.checkIfSc2RealmLooksValid(sc2Realm));
-});
-
-router.get('/validateSc2Realm/:sc2Realm', (req, res) => {
-  const { sc2Realm } = req.params;
-  res.json(BlizzAPI.validateSc2Realm(sc2Realm));
-});
-
-router.get('/isSc2RealmValidForRegionId/:sc2Realm/:regionId', (req, res) => {
-  const { sc2Realm, regionId } = req.params;
-  res.json(BlizzAPI.isSc2RealmValidForRegionId(sc2Realm, regionId));
-});
-
-router.get('/getAllDefaultLocaleNames', (req, res) => {
-  res.json(BlizzAPI.getAllDefaultLocaleNames());
-});
-
-router.get('/getDefaultLocaleNameForRegionId/:regionId', (req, res) => {
-  const { regionId } = req.params;
-  res.json(BlizzAPI.getDefaultLocaleNameForRegionId(regionId));
 });
 
 module.exports = router;
