@@ -1,7 +1,5 @@
 ![RAIDDON](https://user-images.githubusercontent.com/96427557/200582770-00732e9c-733b-4706-acaf-f7a082bb4e78.png)
 
-![logo](https://user-images.githubusercontent.com/96427557/200649438-9da91bb2-3f1c-4b5b-a4ea-0482de97f633.png)
-
 This microservice is a flexible and feature-rich javascript that allows you to fetch your [battle.net](https://us.shop.battle.net/en-us) acces token using the [BlizzAPI](https://github.com/blizzapi/blizzapi#blizzapi) in order to access to Blizzard Battle.net APIs.
 
 # Install
