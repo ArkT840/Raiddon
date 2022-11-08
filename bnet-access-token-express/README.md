@@ -35,8 +35,8 @@ npm run build
 
 # Documentation
 
-[BattleNet dev portal](https://develop.battle.net/)
-[Getting started with bnet API](https://develop.battle.net/documentation/guides/getting-started)
+Get your client ID and client secret here: [BattleNet dev portal](https://develop.battle.net/)<br />
+Official blizzard documentation: [Getting started with bnet API](https://develop.battle.net/documentation/guides/getting-started)
 
 # Legal
 This project is not authored, affiliated or endorsed in any way by Blizzard Entertainment.
