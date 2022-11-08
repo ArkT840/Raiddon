@@ -26,12 +26,17 @@ const data = await api.query("/path/to/endpoint");
 console.log(data);
 ```
 # Manual build
-
 git clone https://github.com/Farah404/Raiddon <br />
 cd Raiddon<br />
 cd bnet-access-token-express<br />
-npm install<br />
-npm run build
+npm install
+
+# Setup
+Register a client app with [Blizzard Battle.net Developer Portal](https://develop.battle.net/). Note down client id and client secret. <br />
+Copy and rename the file `.env.sample` to `.env`. Edit it accordingly: <br />
+`PORT='8080'`
+`API_BATTLENET_KEY='your client app id'`
+`API_BATTLENET_SECRET='your client app secret'`
 
 # Documentation
 
