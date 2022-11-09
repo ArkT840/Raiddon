@@ -1,6 +1,8 @@
+###Home page
+GET http://localhost:8085
+
 ###Fetching Access Token
 GET http://localhost:8085/api/getAccessToken/eu
-
 
 ###Playable Races Index
 GET https://us.api.blizzard.com/data/wow/playable-race/index?namespace=static-classic-us&locale=en_US&access_token=EUW5nbYYRvi27pVlj2KksCC7OmKbR9DvVX
