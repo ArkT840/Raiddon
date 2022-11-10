@@ -1,3 +1,4 @@
+![favicon](https://user-images.githubusercontent.com/96427557/201051546-0d6a246d-8fe3-4228-a385-06d31d03f49d.png)
 
 
 # Warcraft Log API using python and oAUTH
