@@ -78,5 +78,5 @@ GraphQL uses schemas that document everything, so if you use a client like Insom
 You can also view the schema in your browser by clicking [here](https://www.warcraftlogs.com/v2-api-docs/warcraft/).
 
 ## Legal
-This project is not authored, affiliated or endorsed in any way by WarcraftLogs.
-If you have any support questions, please reach out to our support team at support@warcraftlogs.com.
+This project is not authored, affiliated or endorsed in any way by WarcraftLogs.<br/>
+If you have any support questions, please reach out to support team at support@warcraftlogs.com.
