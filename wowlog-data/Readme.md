@@ -60,7 +60,7 @@ echo "export userSECRET='YOUR USER SECRET'" >> ~/.zshrc
 The app will fetch the access token, store it in a hidden json file and then fetch it in order to send a query to warcraft logs API.
 You will need to [install python](https://www.python.org/downloads/) and add it to your environmental path 
 
-### Exemple retrived data
+### Example retrived data
 ```[{'id': 10, 'name': 'Rage Winterchill', 'startTime': 17142991, 'endTime': 17315564}, 
 {'id': 19, 'name': 'Anetheron', 'startTime': 18002072, 'endTime': 18153347}, 
 {'id': 28, 'name': "Kaz'rogal", 'startTime': 19310047, 'endTime': 19456852}, 
